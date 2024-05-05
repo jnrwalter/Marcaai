@@ -108,7 +108,7 @@ select {
     font-size: 14px;
 }
 
-#grupoArenas {
+#grupoArena {
     display: flex;
     gap: 10px;
     align-items: center;
