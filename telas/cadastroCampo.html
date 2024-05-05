@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de campo</title>
+    <link rel="stylesheet" href="../css/cadastroCampo.css">
+</head>
+
+<body id="corpo">
+    <label for="" id="tituloTela">Cadastro de Campo<br /></label>
+    <form method="post" id="formulario" action="">
+        <img id="fotoCampo" />Foto
+        <div id="grupoCampos">
+            <label for="" id="labelNome">Nome</label>
+            <input class="input" id="txtNomeCampo" name="txtNomeCampo" placeholder="Digite aqui o nome do campo."
+                required />
+            <textarea id="txtDescricaoCampo"
+                placeholder="Digite aqui a descrição do campo, como por exemplo: Quantidade de jogadores, tipo de grama, etc... "
+                required name="txtDescricaoCampo"></textarea>
+            <label for="" id="labelValor">Valor</label>
+            <input class="input" id="txtValorAluguel" type="number" name="txtValorAluguel"
+                placeholder="Informe o valor do aluguel..." />
+        </div>
+        <div id="grupoBotoes">
+            <button type="button" id="botaoSalvarCampo">Editar</button>
+            <button type="button" id="botaoEditarCampo">Salvar</button>
+        </div>
+    </form>
+</body>
+
+</html>

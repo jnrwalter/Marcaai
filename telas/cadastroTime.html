@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Time</title>
+    <link rel="stylesheet" href="../css/cadastroTime.css">
+</head>
+
+<body id="corpo">
+    <label for="" id="tituloTela">Cadastro de Time<br /></label>
+    <form method="post" id="formulario" action="">
+        <img id="fotoTime" />Escudo
+        <div id="grupoTime">
+            <label class="label" id="labelNome">Nome</label>
+            <input class="input" id="txtNomeTime" name="txtNomeTime" placeholder="Digite aqui o nome do Time."
+                required />
+            <label class="label" id="labelDataFundacao">Data de fundação</label>
+            <input class="input" type="date" id="txtDataFundacao">            
+            <div id="divAddJogadores">
+                <label class="label" id="labelJogadores" style="width: 100px;">Jogadores:</label>
+                <input class="botaoAddJogador" type="button">
+            </div>
+        <div id="grupoBotoes">
+            <button class="botao" type="button" id="botaoSalvarTime">Editar</button>
+            <button class="botao" type="button" id="botaoEditarTime">Salvar</button>
+        </div>
+    </form>
+</body>
+
+</html>

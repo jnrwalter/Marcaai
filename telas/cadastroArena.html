@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Arena</title>
+    <link rel="stylesheet" href="../css/cadastroArena.css">
+</head>
+
+<body id="corpo">
+    <label for="" id="tituloTela">Cadastro de Arena<br /></label>
+    <form method="post" id="formulario" action="">
+        <img id="fotoArena" />Foto
+        <div id="grupoArenas">
+            <label class="label" id="labelNome">Nome</label>
+            <input class="input" id="txtNomeArena" name="txtNomeArena" placeholder="Digite aqui o nome da Arena."
+                required />
+            <textarea id="txtDescricaoArena"
+                placeholder="Digite aqui a descrição de sua arena, como por exemplo: Valor para mensalistas, brinquedoteca, bar, etc... "
+                required name="txtDescricaoArena"></textarea>
+    
+            <label class="label" id="labelCep">CEP</label>
+            <div id="divCep">
+                <input class="input" id="txtCep" type="number" name="txtCep" placeholder="74.000-00"
+                    style="width: 240px;" />
+                <input class="botaoPesquisar" type="button">
+            </div>
+            <!--<label id="labelCep">CEP</label>
+            <input class="input" id="txtCep" type="number" name="txtCep" placeholder="74.000-00" />-->
+            <label class="label" id="labelNumero">Número</label>
+            <input class="input" id="txtNumero" type="number" name="txtNumero" placeholder="0" />
+            <label class="label" id="labelLogradouro">Logradouro</label>
+            <input class="input" id="txtLogradouro" type="text" name="txtLogradouro"
+                placeholder="Digite a rua onde localiza-se a arena." />
+            <label class="label" id="labelBairro">Bairro</label>
+            <input class="input" id="txtBairro" type="text" name="txtBairro"
+                placeholder="Digite o bairro onde localiza-se a arena." />
+            <label class="label" id="labelUf">UF</label>
+            <select name="opcoesEstados" id="opcoesEstados">
+                <option style="color:black" value="Selecione">Selecione...</option>
+                <option style="color:black" value="GO">GO</option>
+                <option style="color:black" value="DF">DF</option>
+                <option style="color:black" value="MT">MT</option>
+            </select>
+            <label class="label" id="labelCidade">Cidade</label>
+            <select name="opcoesCidades" id="opcoesCidades">
+                <option style="color:black" value="Selecione">Selecione...</option>
+                <option style="color:black" value="Goiania">Goiania</option>
+                <option style="color:black" value="Brasilia">Brasilia</option>
+                <option style="color:black" value="SJX">SJX</option>
+            </select>
+
+        </div>
+        <div id="grupoBotoes">
+            <button type="button" id="botaoSalvarArena">Editar</button>
+            <button type="button" id="botaoEditarArena">Salvar</button>
+        </div>
+    </form>
+</body>
+
+</html>
