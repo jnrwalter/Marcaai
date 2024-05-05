@@ -1,0 +1,82 @@
+body {
+    gap: 100px;
+    margin: 100px;
+}
+
+.divLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logoApp {
+    background-image: url("../imagens/logoApp.jpg");
+    color: black;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+#grupoBotoes {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Arial Black, Gadget, sans-serif;
+    color: rgba(0, 200, 0, 1);
+    font-size: 18px;
+}
+
+label {
+    width: 320px;
+    height: 30px;
+    flex: 1 1 0%;
+    font-family:Arial Black,Gadget,sans-serif;
+	color:rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: black;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    direction: ltr;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-size: 18px;
+}
