@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cadastro de Jogador</title>
+    <link rel="stylesheet" href="../css/cadastroJogador.css">
 </head>
-<body>
 
-    <label>Tela em desenvolvimento!</label>
-    
+<body>
+    <form action="" id="formulario"></form>
+    <div class="grupoCampos">
+        <label>Cadastro de Jogador</label>
+        <img id="fotoJogador" alt=""> Foto
+        <label class="label">Nome</label>
+        <input class="input" type="text" placeholder="Digite aqui seu primeiro nome...">
+        <label class="label">Sobrenome</label>
+        <input class="input" type="text" placeholder="Digite aqui seu sobrenome...">
+        <label class="label">E-mail</label>
+        <input class="input" type="email" placeholder="Digite aqui seu melhor e-mail...">
+        <label class="label">Senha</label>
+        <input class="input" type="password" placeholder="Informe uma senha...">
+        <label class="label">Confirmação de senha</label>
+        <input class="input" type="password" placeholder="Digite a senha novamente...">
+        <label class="label">Condição fisíca</label>
+        <select id="opcoesCondicaoFisica">
+            <option style="color: black;" value="Em forma">Em forma</option>
+            <option style="color: black;" value="Acima do peso">Acima do peso</option>
+        </select>
+        <label class="label">Posição em campo</label>
+        <select id="opcoesProfissionalizacao">
+            <option style="color: black;" value="GOL">GOL</option>
+            <option style="color: black;" value="ZAG">ZAG</option>
+            <option style="color: black;" value="LAT">LAT</option>
+            <option style="color: black;" value="VOL">VOL</option>
+            <option style="color: black;" value="MEI">MEI</option>
+            <option style="color: black;" value="ATA">ATA</option>
+            <option style="color: black;" value="CE">CE</option>            
+        </select>
+        <div id="grupoBotoes">
+            <button class="botao">Editar</button>
+            <button class="botao">Salvar</button>
+        </div>
+    </div>
+    </form>
 </body>
+
 </html>
