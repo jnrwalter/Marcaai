@@ -1,70 +1,114 @@
-
-* {
-  margin: 0;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
-  height: 8vh;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(68, 67, 67);
 }
 
 
-.nav-list {
-  list-style: none;
-  display: flex;
+.background-superior {
+    width: 100%;
+    height: 800px;
+    overflow: hidden; /* Ajuda a controlar o tamanho do video para que não ocupe a tela toda sem necessidade  */
+    display: flex;
+    justify-content: center;
 }
 
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
+.background-superior video {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    min-height: 300px;
+    max-height: 800px;
 }
 
-.divVideoFundo {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.background-superior .content{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
 }
 
-.videoFundo {
-  position: fixed;
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
+div.rolagemHide{
+    display: none;
 }
 
-.conteudo {
-  position: relative;
-  z-index: 1;
-  color: white;
-  font-size: 20px;
+div.rolagemShow{
+    display: none;
 }
 
-.teste {
-  width: 100%;
-  background-color: black;
-  color: white;
+.menu-superior {
+    position: fixed;
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    border: none;
+    font-size: 25px;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
 }
+
+.menu-superior a{
+    text-decoration: none;
+    color: white;
+    width: 150px;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px;
+    color: green;
+    background-color: white;
+}
+
+.slogan {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.slogan h1 {
+    margin-left: 10px;
+    text-align: left;
+    width: 600px;
+}
+
+.slogan button {
+    margin-top: 150px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    font-weight: bold;
+
+    &:hover{
+        background-color: rgba(71, 70, 70, 0.192);
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.div-descricao-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.div-descricao-app p{
+    text-align: center;
+    font-size: 18px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+
+
