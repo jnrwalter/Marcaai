@@ -23,10 +23,21 @@
         <input class="input" type="password" placeholder="Informe uma senha...">
         <label class="label">Confirmação de senha</label>
         <input class="input" type="password" placeholder="Digite a senha novamente...">
-        <label class="label">Condição fisíca</label>
+        <label class="label">Pratica esportes com frequência?</label>
         <select id="opcoesCondicaoFisica">
-            <option style="color: black;" value="Em forma">Em forma</option>
-            <option style="color: black;" value="Acima do peso">Acima do peso</option>
+            <option style="color: black;" value="Sim">Sim</option>
+            <option style="color: black;" value="Não">Não</option>
+        </select>
+        <label class="label">Possui alguma doença crônica ?</label>
+        <select id="opcoesCondicaoFisica">
+            <option style="color: black;">Selecione...</option>
+            <option style="color: black;" value="Sim">Sim</option>
+            <option style="color: black;" value="Não">Não</option>
+        </select>
+        <label class="label">Sexo</label>
+        <select id="opcoesCondicaoFisica">
+            <option style="color: black;" value="Masculino">Masculino</option>
+            <option style="color: black;" value="Feminino">Feminino</option>
         </select>
         <label class="label">Posição em campo</label>
         <select id="opcoesProfissionalizacao">
@@ -36,8 +47,11 @@
             <option style="color: black;" value="VOL">VOL</option>
             <option style="color: black;" value="MEI">MEI</option>
             <option style="color: black;" value="ATA">ATA</option>
-            <option style="color: black;" value="CE">CE</option>            
+            <option style="color: black;" value="CE">OUTRO</option>            
         </select>
+        <label class="label">Objetivo</label>
+        <textarea class="descricao">
+        </textarea>
         <div id="grupoBotoes">
             <button class="botao">Editar</button>
             <button class="botao">Salvar</button>

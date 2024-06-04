@@ -4,13 +4,10 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.header{
-    box-shadow: 0px 3px 10px white;
-}
 
 .barra-topo{
-    background-color: white;
-    box-shadow: 0px 3px 10px rgb(198, 202, 198); 
+    position: sticky;
+    box-shadow: -0px 5px 15px black; 
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;    
@@ -38,54 +35,54 @@
  
 .link-telas{
     margin: 0px 150px;
-    font-size: 25px; 
+    font-size: 25px;
+    text-decoration: none; 
 }
 
 .txt-link{
     color: green;
-    text-decoration: none;
 }
 
-.icon{
-    font-size: 25px;
-    color: black;
-    color: green;
+.link-telas > a{
+    text-decoration: none; 
+    cursor: pointer;
 }
 
-.btn-menu{
-    color: green;
-   font-size: 30px;
-   padding: 10px 15px;  
+.link-telas > a:hover{
+    background-color: rgb(186, 249, 186);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-menu > select{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url("btnMenu.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-position: 0px 0px;
+    background-repeat: round;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    color: rgba(255, 255, 255, 1);
+    border: none; 
+}
+
+.btn-menu:hover{
+    background-color: rgb(164, 247, 164);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .segunda-barra{
-    margin: 15px;
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 595px;
-    background-image: url("../imagens/fundoMarcaai.jpeg")
+    height: 630px;
+    background-image: url(fundoMarcaai.jpeg)
 }
 
-
-.txt-historico{
-    color: black;
-    font-family: Arial Black, Gadget, sans-serif; 
-    height: 100px;
-    margin-left: 70px;
-
-
-}
-
-#historicoPartidas{
-    height: 450px;
-    width: 490px;
-    display: flex;
-    padding: 25px 15px 20px;
-    align-items: center;
-    justify-content: center;
-    color: black;  
-}
 
 
 
