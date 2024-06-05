@@ -11,8 +11,8 @@
 
 <body>
     <div class="background-superior">
-        <div class="content">
-            <nav class="menu-superior">
+        <div id="content" class="content">
+            <nav class="menu-superior" id="menu-superior">
                 <a href="http://google.com.br">
                     <li>Página inicial</li>
                 </a>
@@ -34,7 +34,7 @@
                 <h1>Transforme sua paixão pelo esporte em momentos inesquecíveis de diversão e camaradagem, tudo com a
                     facilidade e conveniência do nosso aplicativo de agendamento de partidas de futebol amador.
                     Experimente agora e descubra como é simples jogar quando quiser, onde quiser, com quem quiser.</h1>
-                <a href="http://google.com.br"><button>Quero jogar</button></a>
+                <a href="./telas/home.html"><button>Quero jogar</button></a>
             </div>
 
         </div>
@@ -43,28 +43,43 @@
         </video>
     </div>
 
-    <div class="div-descricao-app">
-        <img src="/imagens/logoApp.jpg" width="200px" height="200px">
-        <p class="p-descricao-app">Com nosso inovador aplicativo de agendamento de partidas de futebol amador, a
-            organização dos seus jogos nunca foi tão fácil e rápida. Esteja você planejando uma partida casual com
-            amigos ou coordenando uma liga local, nosso aplicativo simplifica todo o processo, desde a marcação do campo
-            até o apito inicial. Agende suas partidas com apenas alguns toques na tela do seu dispositivo móvel. Nosso
-            aplicativo intuitivo permite que você escolha a data, o horário e o local da partida de forma conveniente,
-            garantindo que todos os participantes estejam informados e prontos para jogar. Além disso, mantenha-se
-            atualizado com notificações instantâneas sobre novas partidas, alterações de horários e outros detalhes
-            importantes. Nunca mais perca uma oportunidade de entrar em campo com seus amigos.</p>
-    </div>
+    <section id="features">
 
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
-    <div style="height: 650px; z-index: 1;"></div>
+        <div class="div-descricao-app">
 
+            <div class="divHero">
+                <p class="p-descricao-app">Agende suas partidas com apenas alguns toques na tela do seu dispositivo
+                    móvel.
+                    Nosso
+                    aplicativo intuitivo permite que você escolha a data, o horário e o local da partida de forma
+                    conveniente,
+                    garantindo que todos os participantes estejam informados e prontos para jogar. </p>
+                <img src="./imagens/fundoMarcaai.jpeg" width="200px" height="200px">
+            </div>
+
+            <div class="divHero">
+                <img src="./imagens/fundoMarcaai.jpeg" width="200px" height="200px">
+                <p>Mantenha-se
+                    atualizado com notificações instantâneas sobre novas partidas, alterações de horários e outros
+                    detalhes
+                    importantes. Nunca mais perca uma oportunidade de entrar em campo com seus amigos.</p>
+            </div>
+
+        </div>
+
+        <div class="feature">
+            <h2>Agendamento Simples</h2>
+            <p>Agende partidas com apenas alguns cliques. Escolha a data, o horário e o local da partida.</p>
+        </div>
+        <div class="feature">
+            <h2>Notificações</h2>
+            <p>Fique atualizado com notificações automáticas sobre as partidas agendadas.</p>
+        </div>
+        <div class="feature">
+            <h2>Convide Amigos</h2>
+            <p>Convide seus amigos para participar das partidas diretamente pelo aplicativo.</p>
+        </div>
+    </section>
 
     <footer>
         aaaaaaaaaaaaaaaa
@@ -73,7 +88,19 @@
     <script>
         window.addEventListener('scroll', function () {
             var temp = document.getElementById("sloganId")
-            temp.classList.toggle('rolagemHide', window.scrollY > 100)
+            temp.classList.toggle('rolagemHide', window.scrollY > 50)
+            document.getElementById("menu-superior").style.display = "none";
+            document.getElementById("content").style.display = "none";
+        })
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById("menu-superior").style.display = "none";
+            } else {
+                document.getElementById("menu-superior").style.display = "flex";
+                document.getElementById("content").style.display = "block";
+            }
+
         })
     </script>
 

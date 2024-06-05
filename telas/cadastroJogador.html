@@ -29,11 +29,14 @@
             <option style="color: black;" value="Não">Não</option>
         </select>
         <label class="label">Possui alguma doença crônica ?</label>
-        <select id="opcoesCondicaoFisica">
+        <select id="opcoesDoencasCronicas">
             <option style="color: black;">Selecione...</option>
             <option style="color: black;" value="Sim">Sim</option>
             <option style="color: black;" value="Não">Não</option>
         </select>
+        <textarea placeholder="Informe o nome ou descreva a doença..."></textarea>
+        <label class="label">Data de nascimento</label>
+        <input class="input" type="date">
         <label class="label">Sexo</label>
         <select id="opcoesCondicaoFisica">
             <option style="color: black;" value="Masculino">Masculino</option>
@@ -41,17 +44,51 @@
         </select>
         <label class="label">Posição em campo</label>
         <select id="opcoesProfissionalizacao">
-            <option style="color: black;" value="GOL">GOL</option>
-            <option style="color: black;" value="ZAG">ZAG</option>
-            <option style="color: black;" value="LAT">LAT</option>
-            <option style="color: black;" value="VOL">VOL</option>
-            <option style="color: black;" value="MEI">MEI</option>
-            <option style="color: black;" value="ATA">ATA</option>
-            <option style="color: black;" value="CE">OUTRO</option>            
+            <option style="color: black;" value="GOL">Goleiro</option>
+            <option style="color: black;" value="ZAG">Zagueiro</option>
+            <option style="color: black;" value="LAT">Lateral</option>
+            <option style="color: black;" value="VOL">Volante</option>
+            <option style="color: black;" value="MEI">Meio de capo</option>
+            <option style="color: black;" value="ATA">Atacante</option>
+            <option style="color: black;" value="CE">Outro</option>
         </select>
-        <label class="label">Objetivo</label>
-        <textarea class="descricao">
-        </textarea>
+        <label class="label">Perna dominante</label>
+        <select id="opcoesPernaDominante">
+            <option style="color: black;" value="GOL">Direita</option>
+            <option style="color: black;" value="ZAG">Esquerda</option>
+            <option style="color: black;" value="LAT">Ambidestro</option>
+        </select>
+        <label class="label">Altura</label>
+        <input class="input" type="number" placeholder="Digite sua altura">
+        <label class="label">Peso</label>
+        <input class="input" type="number" placeholder="Digite aqui quanto você pesa">
+        <label class="label">Bio</label>
+        <textarea placeholder="Descreva algo que ache relavante sobre você."></textarea>
+        <label class="label">Endereço</label>
+        <label class="label" id="labelCep">CEP</label>
+        <input class="input" id="txtCep" type="number" name="txtCep" placeholder="74.000-00" />
+        <label class="label" id="labelNumero">Número</label>
+        <input class="input" id="txtNumero" type="number" name="txtNumero" placeholder="0" />
+        <label class="label" id="labelLogradouro">Logradouro</label>
+        <input class="input" id="txtLogradouro" type="text" name="txtLogradouro"
+            placeholder="Digite a rua onde localiza-se a arena." />
+        <label class="label" id="labelBairro">Bairro</label>
+        <input class="input" id="txtBairro" type="text" name="txtBairro"
+            placeholder="Digite o bairro onde localiza-se a arena." />
+        <label class="label" id="labelUf">UF</label>
+        <select name="opcoesEstados" id="opcoesEstados">
+            <option style="color:black" value="Selecione">Selecione...</option>
+            <option style="color:black" value="GO">GO</option>
+            <option style="color:black" value="DF">DF</option>
+            <option style="color:black" value="MT">MT</option>
+        </select>
+        <label class="label" id="labelCidade">Cidade</label>
+        <select name="opcoesCidades" id="opcoesCidades">
+            <option style="color:black" value="Selecione">Selecione...</option>
+            <option style="color:black" value="Goiania">Goiania</option>
+            <option style="color:black" value="Brasilia">Brasilia</option>
+            <option style="color:black" value="SJX">SJX</option>
+        </select>
         <div id="grupoBotoes">
             <button class="botao">Editar</button>
             <button class="botao">Salvar</button>
