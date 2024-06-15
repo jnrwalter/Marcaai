@@ -1,102 +1,267 @@
+* {
+	box-sizing:border-box;
+}
 body {
-    flex-wrap: wrap;
-	background-color: green;
-	flex-direction: column;
+	margin:0;
 }
-
-#back {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width: 100%;
-	height:500px;
-    gap: 10px;
-    flex-direction:row;
-    flex-wrap: wrap;
+* {
+	box-sizing:border-box;
 }
-#front-left {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	gap:10px;
-	width:45%;
-	height:95%;
-    flex-direction:column;
-    background-color: azure;
-    min-width: 300px;
-    border-radius: 10px;
+body {
+	margin:0;
 }
-#front-right {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	gap:10px;
-	width:45%;
-	height:100%;
+.gjs-grid-column {
+	flex:1 1 0%;
+	padding:5px 0;
 	flex-direction:column;
-    min-width: 300px;
+	gap:10px;
 }
-#meuPerfil {
+.gjs-grid-row {
+	display:flex;
+	justify-content:flex-start;
+	align-items:stretch;
+	flex-direction:row;
+	min-height:auto;
+	padding:10px 0;
+}
+#div-fundo-principal {
+	background-color:rgba(38,86,55,1);
+	align-items:center;
+	justify-content:center;
+	gap:10px;
+}
+#i079 {
+	background-color:rgba(200,200,200,1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	max-height:500px;
+	align-self:center;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	justify-content:flex-start;
+	align-items:center;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	padding-top:5px;
+	padding-right:0px;
+	padding-bottom:5px;
+	padding-left:0px;
+}
+#idgc {
+	background-color:rgba(38,86,55,1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	justify-content:center;
+	align-items:center;
+	flex:1 1 0%;
+}
+.gjs-heading {
+	margin:0;
+}
+#ipqx {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-    gap:10px;
+}
+#div-perfil-conteudo {
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	background-color:rgba(200,200,200,1);
+	padding-top:0px;
+	padding-bottom:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+#div-buscar-arenas {
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	background-color:rgba(200,200,200,1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	padding-top:0px;
+	padding-bottom:0px;
 	width:100%;
-	height:30%;
-	flex-direction:column;
-    background-color: azure;
-    border-radius: 10px;
-    min-width: 300px;
 }
-
-#meuTime {
+#ii9d {
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	flex-direction:column;
+}
+#io5me {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#div-perfil {
+	justify-content:center;
+	gap:10px;
+	background-color:rgba(200,200,200,1);
+	padding-top:0px;
+	padding-bottom:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	flex:0 0 auto;
+	align-items:center;
+	width:100%;
+}
+#i0163 {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#i2eul {
+	color:black;
+	width:100px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#im09t {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#i33eg {
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	flex-direction:column;
+}
+#iauc7 {
+	color:black;
+	width:100px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#ilqwg {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	gap:10px;
+}
+#div-time-conteudo {
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	background-color:rgba(200,200,200,1);
+	padding-top:0px;
+	padding-bottom:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+#div-time {
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	background-color:rgba(200,200,200,1);
+	padding-top:0px;
+	padding-bottom:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	width:100%;
+}
+#i7j0s {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	gap:10px;
-	width:100%;
-	height:30%;
-	flex-direction:column;
-    background-color: azure;
-    border-radius: 10px;
-    min-width: 300px;
 }
-
-#rankings {
+#div-jogos-regiao {
+	align-items:center;
+	justify-content:center;
+	gap:10px;
+}
+.gjs-link {
+	vertical-align:top;
+	max-width:100%;
+	display:inline-block;
+	text-decoration:none;
+	color:inherit;
+}
+#ib9yt {
+	padding:10px;
+	background-color:rgba(60,138,77,1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	width:200px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	gap:10px;
-	width:100%;
-	height:30%;
+	color:rgba(255,255,255,1);
+}
+@keyframes fadeEffect {
+	from {
+	opacity:0;
+}
+to {
+	opacity:1;
+}
+}@media (max-width:992px) {
+	.gjs-grid-row {
 	flex-direction:column;
-    background-color: azure;
-    border-radius: 10px;
-    min-width: 300px;
 }
-
-#arenas {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	gap:10px;
-	flex-direction:column;
-    background-color: azure;
-    border-radius: 10px;
-    min-width: 300px;
+#idgc {
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+#div-perfil-conteudo {
+	width:320px;
+}
+#div-buscar-arenas {
+	width:320px;
+}
+#div-perfil {
+	width:320px;
+}
+#div-time-conteudo {
+	width:320px;
+}
+#div-time {
+	width:320px;
+}
+#i079 {
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+}
+}@media (max-width:768px) {
+	#idgc {
 	width:100%;
-	min-height: 300px;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:0px;
 }
-
-
-label {
-    min-width: 100%;
-	text-align: center;
-}
-
-#meu-perfil-content {
-	display: flex;
-	justify-items: center;
-	flex-direction: row;
-	gap: 10px;
 }
