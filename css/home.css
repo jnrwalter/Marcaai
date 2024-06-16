@@ -9,6 +9,8 @@ body {
 }
 a {
 	text-decoration: none;
+	width: 100%;
+	color: black;
 }
 .gjs-grid-column {
 	flex:1 1 0%;
