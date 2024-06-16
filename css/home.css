@@ -7,8 +7,8 @@ body {
 * {
 	box-sizing:border-box;
 }
-body {
-	margin:0;
+a {
+	text-decoration: none;
 }
 .gjs-grid-column {
 	flex:1 1 0%;
