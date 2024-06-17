@@ -7,10 +7,13 @@ body {
 * {
 	box-sizing:border-box;
 }
+body {
+	margin:0;
+}
 a {
-	text-decoration: none;
-	width: 100%;
-	color: black;
+	text-decoration:none;
+	width:100%;
+	color:black;
 }
 .gjs-grid-column {
 	flex:1 1 0%;
@@ -26,13 +29,13 @@ a {
 	min-height:auto;
 	padding:10px 0;
 }
-#div-fundo-principal {
+#div-fundo-principal-2 {
 	background-color:rgba(38,86,55,1);
 	align-items:center;
 	justify-content:center;
 	gap:10px;
 }
-#i079 {
+#i079-2 {
 	background-color:rgba(200,200,200,1);
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -54,7 +57,7 @@ a {
 	padding-bottom:5px;
 	padding-left:0px;
 }
-#idgc {
+#idgc-2 {
 	background-color:rgba(38,86,55,1);
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -70,12 +73,12 @@ a {
 .gjs-heading {
 	margin:0;
 }
-#ipqx {
+#ipqx-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
-#div-perfil-conteudo {
+#div-perfil-conteudo-2 {
 	justify-content:center;
 	align-items:center;
 	gap:10px;
@@ -87,7 +90,7 @@ a {
 	border-bottom-right-radius:10px;
 	border-bottom-left-radius:10px;
 }
-#div-buscar-arenas {
+#div-buscar-arenas-2 {
 	justify-content:center;
 	align-items:center;
 	gap:10px;
@@ -100,18 +103,18 @@ a {
 	padding-bottom:0px;
 	width:100%;
 }
-#ii9d {
+#ii9d-2 {
 	display:flex;
 	justify-content:center;
 	align-items:flex-start;
 	flex-direction:column;
 }
-#io5me {
+#io5me-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
-#div-perfil {
+#div-perfil-2 {
 	justify-content:center;
 	gap:10px;
 	background-color:rgba(200,200,200,1);
@@ -125,12 +128,12 @@ a {
 	align-items:center;
 	width:100%;
 }
-#i0163 {
+#i0163-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
-#i2eul {
+#i2eul-2 {
 	color:black;
 	width:100px;
 	height:100px;
@@ -138,18 +141,18 @@ a {
 	justify-content:center;
 	align-items:center;
 }
-#im09t {
+#im09t-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
-#i33eg {
+#i33eg-2 {
 	display:flex;
 	justify-content:center;
 	align-items:flex-start;
 	flex-direction:column;
 }
-#iauc7 {
+#iauc7-2 {
 	color:black;
 	width:100px;
 	height:100px;
@@ -157,14 +160,14 @@ a {
 	justify-content:center;
 	align-items:center;
 }
-#ilqwg {
+#ilqwg-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
 	gap:10px;
 }
-#div-time-conteudo {
+#div-time-conteudo-2 {
 	justify-content:center;
 	align-items:center;
 	gap:10px;
@@ -176,7 +179,7 @@ a {
 	border-bottom-right-radius:10px;
 	border-bottom-left-radius:10px;
 }
-#div-time {
+#div-time-2 {
 	justify-content:center;
 	align-items:center;
 	gap:10px;
@@ -189,13 +192,13 @@ a {
 	border-bottom-left-radius:10px;
 	width:100%;
 }
-#i7j0s {
+#i7j0s-2 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	gap:10px;
 }
-#div-jogos-regiao {
+#div-jogos-regiao-2 {
 	align-items:center;
 	justify-content:center;
 	gap:10px;
@@ -207,7 +210,7 @@ a {
 	text-decoration:none;
 	color:inherit;
 }
-#ib9yt {
+#ib9yt-2 {
 	padding:10px;
 	background-color:rgba(60,138,77,1);
 	border-top-left-radius:10px;
@@ -220,6 +223,16 @@ a {
 	align-items:center;
 	color:rgba(255,255,255,1);
 }
+#ix8vqh {
+	color:rgba(21,124,13,1);
+	padding:10px;
+	font-family:Arial Black,Gadget,sans-serif;
+	background-color:rgba(233,233,233,1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
 @keyframes fadeEffect {
 	from {
 	opacity:0;
@@ -231,35 +244,39 @@ to {
 	.gjs-grid-row {
 	flex-direction:column;
 }
-#idgc {
+#idgc-2 {
 	margin-top:0px;
 	margin-right:0px;
 	margin-bottom:0px;
 	margin-left:0px;
 }
-#div-perfil-conteudo {
+#div-perfil-conteudo-2 {
 	width:320px;
 }
-#div-buscar-arenas {
+#div-buscar-arenas-2 {
 	width:320px;
 }
-#div-perfil {
+#div-perfil-2 {
 	width:320px;
 }
-#div-time-conteudo {
+#div-time-conteudo-2 {
 	width:320px;
 }
-#div-time {
+#div-time-2 {
 	width:320px;
 }
-#i079 {
+#i079-2 {
 	margin-top:0px;
 	margin-right:0px;
 	margin-bottom:0px;
 	margin-left:0px;
+}
+}@media (max-width:992px) {
+	.gjs-grid-row {
+	flex-direction:column;
 }
 }@media (max-width:768px) {
-	#idgc {
+	#idgc-2 {
 	width:100%;
 	margin-top:0px;
 	margin-right:0px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Arenas - Marca aí</title>
+    <link rel="stylesheet" href="../css/arenas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arenas disponíveis</h1>
+        <div class="card-container" id="card-container">
+            <?php
+            // Configurações de conexão com o banco de dados PostgreSQL
+            $host = "localhost";
+            $port = "5432";
+            $dbname = "marca_ai";
+            $user = "postgres";
+            $password = "post";
+
+            // Conectando ao banco de dados PostgreSQL
+            $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";
+            try {
+                $pdo = new PDO($dsn);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                
+                // Consulta SQL para selecionar todas as arenas
+                $sql = "SELECT id, nome, descricao, localizacao, capacidade FROM arenas";
+                $stmt = $pdo->query($sql);
+
+                // Exibindo as arenas em cards
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    echo '<div class="card">';
+                    echo '<h2>' . htmlspecialchars($row["nome"]) . '</h2>';
+                    echo '<p>' . htmlspecialchars($row["descricao"]) . '</p>';
+                    echo '<p><strong>Localização:</strong> ' . htmlspecialchars($row["localizacao"]) . '</p>';
+                    echo '<p><strong>Capacidade:</strong> ' . htmlspecialchars($row["capacidade"]) . ' pessoas</p>';
+                    echo '</div>';
+                }
+
+                // Fechando a conexão
+                unset($pdo);
+            } catch (PDOException $e) {
+                die("Erro ao conectar ao banco de dados: " . $e->getMessage());
+            }
+            ?>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
