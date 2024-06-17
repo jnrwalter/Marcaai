@@ -43,7 +43,7 @@
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
                     echo '<div class="card">';
-                    echo '<a href="../telas/arena.php" class="link-arena">';
+                    echo '<a href="../telas/agendamento.php" class="link-arena">';
                     echo '<img src="../imagens/logoApp.jpg">';
                     echo '<h2>' . htmlspecialchars($row["nome"]) . '</h2>';
                     echo '<p>' . htmlspecialchars($row["descricao"]) . '</p>';
@@ -61,7 +61,16 @@
             ?>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+    </script>
 </body>
 
 </html>
