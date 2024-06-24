@@ -57,13 +57,21 @@ div.rolagemHide{
     width: 150px;
 }
 
-button {
+#quero-jogar {
     border: none;
     font-size: 20px;
     width: 200px;
     border-radius: 10px;
+    background-color: black;
     color: green;
-    background-color: white;
+    background-color: white;  
+    
+
+    &:hover{
+        background-color: rgba(71, 70, 70, 0.192);
+        cursor: pointer;
+        color: white;       
+    }
 }
 
 .slogan {
@@ -89,18 +97,7 @@ button {
     min-width: 300px;
 }
 
-.slogan button {
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    font-weight: bold;
-    color: white;
 
-    &:hover{
-        background-color: rgba(71, 70, 70, 0.192);
-        cursor: pointer;
-        color: white;
-    }
-}
 
 .div-descricao-app {
     display: flex;

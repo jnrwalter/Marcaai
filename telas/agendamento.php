@@ -61,14 +61,14 @@
             <h2>Adicionar Jogador</h2>
             <form id="form-jogador">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+                <input type="text" id="nome" name="nome" required>
                 
                 <label for="posicao">Posição em Campo:</label>
                 <select id="posicao" name="posicao" required>
                     <option value="">Selecione...</option>
                     <option value="Goleiro">Goleiro</option>
                     <option value="Defensor">Zagueiro</option>
-                    <option value="Meio-campo">Meio-campo</option>
+                    <option value="Meio-campo">Meio campo</option>
                     <option value="Pivô">Pivô</option>
                     <option value="Atacante">Atacante</option>
                 </select>                
@@ -84,22 +84,22 @@
             <h2>Novo Jogo</h2>
             <form id="form-novo-jogo">
                 <label for="nome-jogo">Nome do Jogo:</label>
-                <input type="text" id="nome-jogo" name="nome-jogo" required><br><br>
-                
-                <label for="descricao-jogo">Descrição:</label><br>
-                <textarea id="descricao-jogo" name="descricao-jogo" rows="4" cols="50" required></textarea><br><br>
+                <input type="text" id="nome-jogo" name="nome-jogo" required>
+
+                <label for="descricao-jogo">Descrição:</label>
+                <textarea id="descricao-jogo" name="descricao-jogo" rows="4" cols="50" required></textarea>
                 
                 <label for="data-jogo">Data:</label>
-                <input type="date" id="data-jogo" name="data-jogo" required><br><br>
+                <input type="date" id="data-jogo" name="data-jogo" required>
                 
                 <label for="horario-jogo">Horário:</label>
-                <input type="time" id="horario-jogo" name="horario-jogo" required><br><br>
+                <input type="time" id="horario-jogo" name="horario-jogo" required>
                 
                 <label for="min-jogadores">Quantidade Mínima de Jogadores:</label>
-                <input type="number" id="min-jogadores" name="min-jogadores" min="1" required><br><br>
+                <input type="number" id="min-jogadores" name="min-jogadores" min="1" required>
                 
                 <label for="max-jogadores">Quantidade Máxima de Jogadores:</label>
-                <input type="number" id="max-jogadores" name="max-jogadores" min="1" required><br><br>
+                <input type="number" id="max-jogadores" name="max-jogadores" min="1" required>
                 
                 <div class="div-botoes">
                     <button type="button" id="btn-criar-jogo">Criar Jogo</button>

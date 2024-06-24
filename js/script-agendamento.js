@@ -3,26 +3,27 @@
 let jogos = [
     {
         jogo: "Jogo de Abertura",
-        descricao: "Primeiro jogo na Arena XYZ",
+        descricao: "Primeiro jogo na Arena Fulano de tal",
         data: "2024-07-01",
         horario: "18:00",
         minJogadores: 5,
         maxJogadores: 10,
         jogadoresConfirmados: [
             { nome: "João", foto: "https://via.placeholder.com/50", posicao: "Goleiro" },
-            { nome: "Maria", foto: "https://via.placeholder.com/50", posicao: "Atacante" }
+            { nome: "Maria", foto: "https://via.placeholder.com/50", posicao: "Atacante" },
+            { nome: "Julia", foto: "https://via.placeholder.com/50", posicao: "Meio campo" }
         ]
     },
     {
         jogo: "Torneio Amador",
         descricao: "Torneio entre amigos",
         data: "2024-07-15",
-        horario: "14:00",
+        horario: "16:00",
         minJogadores: 2,
         maxJogadores: 15,
         jogadoresConfirmados: [
-            { nome: "Pedro", foto: "https://via.placeholder.com/50", posicao: "Defensor" },
-            { nome: "Ana", foto: "https://via.placeholder.com/50", posicao: "Meio-campo" }
+            { nome: "Pedro", foto: "https://via.placeholder.com/50", posicao: "Zagueiro" },
+            { nome: "Ana", foto: "https://via.placeholder.com/50", posicao: "Meio campo" }
         ]
     }
 ];

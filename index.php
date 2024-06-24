@@ -16,13 +16,13 @@
                 <a href="./telas/arenas.php">
                     <li>Arenas</li>
                 </a>
-                <a href="http://google.com.br">
+                <a href="">
                     <li>Rankings</li>
                 </a>
                 <a href="./telas/login.html">
                     <li>Login</li>
                 </a>
-                <a href="http://google.com.br">
+                <a href="">
                     <li>Sobre</li>
                 </a>
             </nav>
@@ -31,7 +31,9 @@
                 <h1>Transforme sua paixão pelo esporte em momentos inesquecíveis de diversão e camaradagem, tudo com a
                     facilidade e conveniência do nosso aplicativo de agendamento de partidas de futebol amador.
                     Experimente agora e descubra como é simples jogar quando quiser, onde quiser, com quem quiser.</h1>
-                <a href="./telas/arenas.html"><button>Quero jogar</button></a>
+                <a href="./telas/arenas.php">
+                    <button id="quero-jogar">Quero jogar</button>
+                </a>
             </div>
 
         </div>
@@ -40,7 +42,7 @@
         </video>
     </div>
 
-    <section id="features">
+    <!--<section id="features">
 
         <div class="div-descricao-app">
 
@@ -80,7 +82,7 @@
 
     <footer>
         aaaaaaaaaaaaaaaa
-    </footer>
+    </footer> -->
 
     <script>
         window.addEventListener('scroll', function () {
@@ -100,9 +102,6 @@
 
         })
     </script>
-
-
-
 
 </body>
 
