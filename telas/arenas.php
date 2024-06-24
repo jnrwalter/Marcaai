@@ -24,7 +24,7 @@
             <?php
             // Configurações de conexão com o banco de dados PostgreSQL
             $host = "localhost";
-            $port = "5434";
+            $port = "5432";
             $dbname = "marca_ai";
             $user = "postgres";
             $password = "post";

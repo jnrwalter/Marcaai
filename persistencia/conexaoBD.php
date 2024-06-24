@@ -5,9 +5,9 @@
 //senha
 
 $endereço = 'localhost'
-$banco = 'marcaai'
+$banco = 'marca_ai'
 $usuario = 'postgres'
-$senha = 'admin'
+$senha = 'post'
  
 try{
 	$pdo = new PDO("pgsql:host=$endereço;port=5432;dbname=$banco, $usuario, $senha, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXECEPTION]):
