@@ -52,7 +52,6 @@ button:hover {
 .modal-content {
     background-color: #fefefe;
     margin: 100px auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
@@ -79,25 +78,22 @@ form {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
 
-label {
-    margin-bottom: 5px;
-}
 
 input[type=text], input[type=number], select, textarea {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0 15px 0;
+    height: 30px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
 input[type=date], input[type=time] {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0 15px 0;
+    height: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -145,6 +141,7 @@ textarea {
 /* Estilos específicos para botões dentro dos cards */
 .btn-adicionar, .btn-confirmar-agendamento {
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 /* Estilo para modal de feedback */
@@ -163,8 +160,8 @@ textarea {
 
 .div-botoes{
     display: flex;
-    justify-content: right;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
 }
 
 /* Responsividade */
@@ -223,9 +220,7 @@ textarea {
   .text {
     color: #f2f2f2;
     font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
     width: 100%;
     text-align: center;
   }
@@ -234,7 +229,6 @@ textarea {
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 12px;
     position: absolute;
     top: 0;
   }

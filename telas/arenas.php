@@ -11,7 +11,7 @@
 <body>
     <div class="container">
 
-        <a class="home" href="../index.html">Marca aí</a>
+        <a class="home" href="../index.php">Marca aí</a>
 
         <div id="div-pesquisar">
             <input type="text" name="" id="">
@@ -24,7 +24,7 @@
             <?php
             // Configurações de conexão com o banco de dados PostgreSQL
             $host = "localhost";
-            $port = "5432";
+            $port = "5434";
             $dbname = "marca_ai";
             $user = "postgres";
             $password = "post";
@@ -44,7 +44,7 @@
 
                     echo '<div class="card">';
                     echo '<a href="../telas/agendamento.php" class="link-arena">';
-                    echo '<img src="../imagens/logoApp.jpg">';
+                    echo '<img src="../imagens/arenas/img(5).jpeg">';
                     echo '<h2>' . htmlspecialchars($row["nome"]) . '</h2>';
                     echo '<p>' . htmlspecialchars($row["descricao"]) . '</p>';
                     echo '<p><strong>Localização:</strong> ' . htmlspecialchars($row["localizacao"]) . '</p>';

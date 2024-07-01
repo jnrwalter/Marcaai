@@ -30,15 +30,18 @@ body {
 
 button {
     width: 300px;
-    height: 50px;
+    height: 30px;
     background-color: rgba(255, 255, 255, 1);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     font-family: Arial Black, Gadget, sans-serif;
     color: rgba(0, 200, 0, 1);
     font-size: 18px;
+
+    &:hover{
+        background-color: rgba(71, 70, 70, 0.192);
+        cursor: pointer;  
+    }
+
 }
 
 label {
@@ -54,7 +57,7 @@ label {
 
 input {
     width: 300px;
-    height: 50px;
+    height: 30px;
     background-color: rgba(255, 255, 255, 0);
     border-top-style: solid;
     border-right-style: solid;
@@ -79,4 +82,8 @@ input {
     direction: ltr;
     font-family: Arial Black, Gadget, sans-serif;
     font-size: 18px;
+}
+
+a {
+    cursor: pointer;
 }
